@@ -1,0 +1,41 @@
+<h1><center>Country Club Registration</center></h1>
+<table border='1'>
+   <tr><th>PACKAGE</th>  <th>AMOUNT</th>  <th>DISCOUNT</th>  <th>SEASON</th></tr>
+   <tr><td>SILVER</td>   <td>100000</td>  <td>10%</td>       <td>Summer</td></tr>
+   <tr><td>GOLD</td>     <td>200000</td>  <td>10%</td>       <td>Winter</td></tr>
+   <tr><td>PLATINUM</td> <td>300000</td>  <td>10%</td>       <td>Monsoon</td></tr>
+   <tr><td>DIAMOND</td>  <td>400000</td>  <td>10%</td>       <td>Spring</td></tr>
+ </table><br><br><br>
+<form action="countrycluburl" method="post">
+<pre>
+<b>Name     ::</b><input type="text"  name="pname"><br><br>
+<b>Address  ::</b><input type="text"  name="paddress"><br><br>
+<b>Season   ::</b><select name="pseason" onChange="frm.submit()">
+
+        <option value="">--select value--</option>
+        <option value="Winter">WINTER</option>
+        <option value="Summer">SUMMER</option>
+        <option value="Monsoon">MONSOON</option> 
+        <option value="Spring">SPRING</option>
+        </select><br><br>
+
+<b>Package  ::</b><select name="ppackage" onChange="frm.submit()">
+
+        <option value="">select Tour Package</option>
+        <option value="silver">SILVER</option>
+        <option value="gold">GOLD</option>
+        <option value="platinum">PLATINUM</option> 
+        <option value="diamond">DIAMOND</option>
+        </select><br><br>
+<b>Amount   ::</b><input type="number"  name="pamount"><br><br>        
+<b>country  ::</b> <select name="pcountry"  onchange="frm.submit()">
+                                                <option value="">--select value--</option>
+                                               <option value="0">INDIA</option>
+                                               <option value="1">SOUTH AFRICA</option>
+                                               <option value="2">USA</option>
+                                               <option value="3">CHINA</option>
+                                               <option value="4">RUSSIA</option>
+                                          </select><br><br>
+<input type="submit" value="register">
+</pre>
+</form>
